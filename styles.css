@@ -3,7 +3,16 @@ body {
   margin: 20px;
 }
 
-.container {
+/* .titulo {
+  display: inline-block;
+} */
+
+/* .container {
+  border: 2px solid #333;
+  padding: 10px;
+} */
+
+.contenedor-resto {
   border: 2px solid #333;
   padding: 10px;
 }
@@ -46,5 +55,21 @@ body {
   border: 2px solid #333;
   padding: 10px;
   display: flex;
+  gap: 10px;
+}
+
+/*DISPLAY GRID ***************/
+
+.box4 {
+  background-color: lightblue;
+  border: 1px solid #000;
+  margin: 5px;
+  text-align: center;
+}
+
+
+.contgrid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   gap: 10px;
 }
