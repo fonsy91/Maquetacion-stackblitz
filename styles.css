@@ -1,24 +1,13 @@
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
+html {
+  height: 100vh;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 20px;
   margin: 0;
 }
-
-/* .titulo {
-  display: inline-block;
-} */
-
-/* .container {
-  border: 2px solid #333;
-  padding: 10px;
-} */
 
 .contenedor-resto {
   border: 2px solid #333;
@@ -82,10 +71,30 @@ body {
   gap: 10px;
 }
 
+.contenedor-padre {
+  align-content: center;
+}
+
 .contenedor-alinear {
   background: indigo;
   color: white;
   padding: 2rem;
   width: 300px;
   margin: auto;
+  text-align: center;
+}
+
+/*ALINEACION CON FLEX ***************/
+.contenedor-padre-flex {
+  width: 300px;
+  background: indigo;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.contenedor-hijo-flex {
+  border: 1px solid #000;
 }

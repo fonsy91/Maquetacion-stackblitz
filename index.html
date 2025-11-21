@@ -142,48 +142,104 @@
     <div class="box4">Caja 3</div>
   </section>
 
-  <div class="container mb-4">
+
+  <div class="container">
     <h1 class="mt-4">ALINEAR Y CENTRAR CON CSS</h1>
-
+  </div>
+  <div class="container contenedor-padre mb-4">
     <div class="contenedor-alinear">
-      Alfons, tu streamer de CSS de confianza
+      Alfons, centrando un div
     </div>
-
   </div>
 
-<!--CODIGO Y DOCUMENTACION ********************************************************-->
+  <!--CODIGO Y DOCUMENTACION ********************************************************-->
+  <div class="container mt-4">
+    <ul class="nav nav-tabs" id="codeTabs2" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="html2-tab" data-bs-toggle="tab" data-bs-target="#html2" type="button" role="tab">HTML</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="css2-tab" data-bs-toggle="tab" data-bs-target="#css2" type="button" role="tab">CSS</button>
+      </li>
+    </ul>
+
+    <div class="tab-content border p-3" id="codeTabsContent2">
+      <div class="tab-pane fade show active" id="html2" role="tabpanel">
+        <pre><code class="language-html">
+          &lt;div class="contenedor-alinear"&gt;
+            Alfons, tu streamer de CSS de confianza
+          &lt;/div&gt;
+        </code></pre>
+      </div>
+      <div class="tab-pane fade" id="css2" role="tabpanel">
+        <pre><code class="language-css">
+          .contenedor-alinear {
+            background: indigo;
+            color: white;
+            padding: 2rem;
+            width: 300px;
+            margin: auto;
+            text-align: center;
+          }
+        </code></pre>
+      </div>
+    </div>
+  </div>
+  <!--*******************************************************************************-->
+
+
+  <div class="container">
+    <h1 class="mt-4">ALINEAR Y CENTRAR CON FLEX CSS</h1>
+  </div>
+  <div class="container contenedor-padre-flex">
+    <div class="contenedor-hijo-flex">
+      Alfons, centrando un div Flex
+    </div>
+  </div>
+
+  <!-- CODIGO Y DOCUMENTACION ********************************************************-->
 <div class="container mt-4">
-  <ul class="nav nav-tabs" id="codeTabs2" role="tablist">
+  <ul class="nav nav-tabs" id="codeTabsFlex" role="tablist">
     <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="html2-tab" data-bs-toggle="tab" data-bs-target="#html2" type="button" role="tab">HTML</button>
+      <button class="nav-link active" id="htmlFlex-tab" data-bs-toggle="tab" data-bs-target="#htmlFlex" type="button" role="tab">HTML</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="css2-tab" data-bs-toggle="tab" data-bs-target="#css2" type="button" role="tab">CSS</button>
+      <button class="nav-link" id="cssFlex-tab" data-bs-toggle="tab" data-bs-target="#cssFlex" type="button" role="tab">CSS</button>
     </li>
   </ul>
 
-  <div class="tab-content border p-3" id="codeTabsContent2">
-    <div class="tab-pane fade show active" id="html2" role="tabpanel">
+  <div class="tab-content border p-3" id="codeTabsContentFlex">
+    <div class="tab-pane fade show active" id="htmlFlex" role="tabpanel">
       <pre><code class="language-html">
-        &lt;div class="contenedor-alinear"&gt;
-          Alfons, tu streamer de CSS de confianza
+        &lt;div class="container contenedor-padre-flex"&gt;
+          &lt;div class="contenedor-hijo-flex"&gt;
+            Alfons, centrando un div Flex
+          &lt;/div&gt;
         &lt;/div&gt;
       </code></pre>
     </div>
-    <div class="tab-pane fade" id="css2" role="tabpanel">
+    <div class="tab-pane fade" id="cssFlex" role="tabpanel">
       <pre><code class="language-css">
-        .contenedor-alinear {
+        .contenedor-padre-flex {
+          width: 300px;
           background: indigo;
           color: white;
           padding: 2rem;
-          width: 300px;
-          margin: auto;
+          display: flex;
+          gap: 5px;
+          justify-content: center;
+        }
+
+        .contenedor-hijo-flex {
+          border: 1px solid #000;
+          padding: 1rem;
         }
       </code></pre>
     </div>
   </div>
 </div>
 <!--*******************************************************************************-->
+
 
 
 
