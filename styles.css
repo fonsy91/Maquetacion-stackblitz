@@ -121,3 +121,11 @@ body {
   border: 1px solid black; /* opcional, para que veas el contenedor */
   height: 150px; /* opcional, necesario para ver el efecto de align-items */
 }
+
+#flexContainerContent {
+  display: flex;
+  flex-wrap: wrap;      /* Necesario para que haya varias filas */
+  gap: 10px;            /* Separación entre cajas */
+  border: 1px solid black;
+  height: 300px;        /* Necesario para notar los cambios en align-content */
+}

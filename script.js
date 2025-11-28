@@ -1,5 +1,5 @@
 
-// Para JUSTIFY CONTENT
+// Para justify-content
 function setJustify(value) {
     const flexContainer = document.getElementById('flexContainer');
     if (flexContainer) {
@@ -14,3 +14,11 @@ function setAlign(value) {
         flexContainerItems.style.alignItems = value;
     }
 }
+
+// Función global que cambia align-content del contenedor
+function setAlignContent(value) {
+    const container = document.getElementById('flexContainerContent');
+    if (container) {
+      container.style.alignContent = value;
+    }
+  }
