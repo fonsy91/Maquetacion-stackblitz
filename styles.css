@@ -195,3 +195,26 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/*PARA FORMULARIO GRID*/
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* .form-grid label {
+  width: 100%;
+} */
+
+.form-grid input,
+.form-grid textarea {
+  width: 100%;
+  padding: 8px 12px;
+}
+
+.full-width {
+  grid-column: 1 / -1; /* Ocupa toda la fila */
+  display: flex;
+  flex-direction: column;
+}
