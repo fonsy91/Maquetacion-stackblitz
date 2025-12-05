@@ -175,3 +175,23 @@ body {
   padding: 20px;
   text-align: center;
 }
+
+
+/*PARA LA ALINEACION DE ELEMENTOS GRID*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+  width: 400px;   /* contenedor más grande que el grid */
+  height: 300px;  /* contenedor más alto que el grid */
+  border: 2px solid #333;
+}
+
+.grid-box {
+  background: teal;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

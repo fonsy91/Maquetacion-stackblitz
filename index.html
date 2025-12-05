@@ -417,8 +417,72 @@
       <div>auto-fit 4</div>
       <div>auto-fit 5</div>
     </div>
-    
+
+    <p class="mt-4">
+      - El grid “se ajusta” automáticamente. <br>
+      - Si hay espacio extra, las columnas existentes se estiran hasta ocuparlo. <br>
+      - Las columnas vacías no se muestran.
+    </p>
   </div>
+
+  <div class="container pb-3">
+    <h5 class="mt-4">Propiedades de alineacion Grid CSS</h5>
+
+    <!-- Botones para justify-items -->
+    <p><strong>justify-items (elementos horizontal)</strong></p>
+    <div class="mb-3">
+      <button class="btn btn-primary me-2" onclick="setGridProperty('justify-items','start')">start</button>
+      <button class="btn btn-primary me-2" onclick="setGridProperty('justify-items','center')">center</button>
+      <button class="btn btn-primary me-2" onclick="setGridProperty('justify-items','end')">end</button>
+      <button class="btn btn-primary me-2" onclick="setGridProperty('justify-items','stretch')">stretch</button>
+    </div>
+
+    <!-- Botones para align-items -->
+    <p><strong>align-items (elementos vertical)</strong></p>
+    <div class="mb-3">
+      <button class="btn btn-success me-2" onclick="setGridProperty('align-items','start')">start</button>
+      <button class="btn btn-success me-2" onclick="setGridProperty('align-items','center')">center</button>
+      <button class="btn btn-success me-2" onclick="setGridProperty('align-items','end')">end</button>
+      <button class="btn btn-success me-2" onclick="setGridProperty('align-items','stretch')">stretch</button>
+    </div>
+
+    <!-- Botones para justify-content -->
+    <p><strong>justify-content (contenido horizontal)</strong></p>
+    <div class="mb-3">
+      <button class="btn btn-warning me-2" onclick="setGridProperty('justify-content','start')">start</button>
+      <button class="btn btn-warning me-2" onclick="setGridProperty('justify-content','center')">center</button>
+      <button class="btn btn-warning me-2" onclick="setGridProperty('justify-content','end')">end</button>
+      <button class="btn btn-warning me-2" onclick="setGridProperty('justify-content','space-between')">space-between</button>
+      <button class="btn btn-warning me-2" onclick="setGridProperty('justify-content','space-around')">space-around</button>
+      <button class="btn btn-warning" onclick="setGridProperty('justify-content','space-evenly')">space-evenly</button>
+    </div>
+
+    <!-- Botones para align-content -->
+    <p><strong>align-content (contenido vertical)</strong></p>
+    <div class="mb-3">
+      <button class="btn btn-info me-2" onclick="setGridProperty('align-content','start')">start</button>
+      <button class="btn btn-info me-2" onclick="setGridProperty('align-content','center')">center</button>
+      <button class="btn btn-info me-2" onclick="setGridProperty('align-content','end')">end</button>
+      <button class="btn btn-info me-2" onclick="setGridProperty('align-content','space-between')">space-between</button>
+      <button class="btn btn-info me-2" onclick="setGridProperty('align-content','space-around')">space-around</button>
+      <button class="btn btn-info" onclick="setGridProperty('align-content','space-evenly')">space-evenly</button>
+    </div>
+
+    <!-- Grid visual -->
+    <div class="grid-container" id="gridContainer">
+      <div class="grid-box">1</div>
+      <div class="grid-box">2</div>
+      <div class="grid-box">3</div>
+      <div class="grid-box">4</div>
+      <div class="grid-box">5</div>
+      <div class="grid-box">6</div>
+    </div>
+
+
+  </div>
+
+
+
 
 
 

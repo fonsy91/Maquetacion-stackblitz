@@ -21,4 +21,19 @@ function setAlignContent(value) {
     if (container) {
       container.style.alignContent = value;
     }
-  }
+}
+
+// Funciones para GRID
+function setGridProperty(prop, value) {
+    const grid = document.getElementById('gridContainer');
+    if(grid) {
+      grid.style[prop] = value;
+    }
+}
+
+
+
+
+
+
+
