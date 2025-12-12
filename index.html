@@ -9,6 +9,9 @@
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
 
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js"></script>
@@ -124,7 +127,7 @@
       Para display Flex: se vera mas detallado mas adelante.
     </p>
   </div>
-  
+
   <section class="container contenedor mt-4">
     <div class="box3">Caja 1</div>
     <div class="box3">Caja 2</div>
@@ -157,10 +160,12 @@
   <div class="container mt-4">
     <ul class="nav nav-tabs" id="codeTabs2" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="html2-tab" data-bs-toggle="tab" data-bs-target="#html2" type="button" role="tab">HTML</button>
+        <button class="nav-link active" id="html2-tab" data-bs-toggle="tab" data-bs-target="#html2" type="button"
+          role="tab">HTML</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="css2-tab" data-bs-toggle="tab" data-bs-target="#css2" type="button" role="tab">CSS</button>
+        <button class="nav-link" id="css2-tab" data-bs-toggle="tab" data-bs-target="#css2" type="button"
+          role="tab">CSS</button>
       </li>
     </ul>
 
@@ -202,10 +207,12 @@
   <div class="container mt-4">
     <ul class="nav nav-tabs" id="codeTabsFlex" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="htmlFlex-tab" data-bs-toggle="tab" data-bs-target="#htmlFlex" type="button" role="tab">HTML</button>
+        <button class="nav-link active" id="htmlFlex-tab" data-bs-toggle="tab" data-bs-target="#htmlFlex" type="button"
+          role="tab">HTML</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="cssFlex-tab" data-bs-toggle="tab" data-bs-target="#cssFlex" type="button" role="tab">CSS</button>
+        <button class="nav-link" id="cssFlex-tab" data-bs-toggle="tab" data-bs-target="#cssFlex" type="button"
+          role="tab">CSS</button>
       </li>
     </ul>
 
@@ -246,9 +253,11 @@
       Hay que diferenciar bien las propiedades dde justify-content (horizontal) y align-content (vertical)
     </p>
     <ol class="list-group list-group-numbered">
-      <li class="list-group-item"><strong>Justify-content:</strong> start, center, end, space-between, spaca-around, space-evenly</li>
+      <li class="list-group-item"><strong>Justify-content:</strong> start, center, end, space-between, spaca-around,
+        space-evenly</li>
       <li class="list-group-item"><strong>Align-items:</strong> start, center, end, stretch, baseline</li>
-      <li class="list-group-item"><strong>align-content:</strong> start | end | center | space-between | space-around | space-evenly | stretch</li>
+      <li class="list-group-item"><strong>align-content:</strong> start | end | center | space-between | space-around |
+        space-evenly | stretch</li>
     </ol>
   </div>
 
@@ -271,7 +280,7 @@
     </div>
 
     <hr class="my-4">
-    
+
     <h6>Práctica Align-Items</h6>
     <div class="mb-3 mt-2 pb-4">
       <button class="btn btn-success me-2" onclick="setAlign('flex-start')">start</button>
@@ -325,9 +334,10 @@
     </div>
 
     <p class="mt-4">
-      Tambien podemos usar repeat() en vez de grid-template-columns y grid-template-rows ya que 
+      Tambien podemos usar repeat() en vez de grid-template-columns y grid-template-rows ya que
       puede ser repetitivo y molesto. <br><br>
-      grid-template-columns: 100px repeat(4, 50px) 200px; que equivale a grid-template-columns: 100px 50px 50px 50px 50px 200px;
+      grid-template-columns: 100px repeat(4, 50px) 200px; que equivale a grid-template-columns: 100px 50px 50px 50px
+      50px 200px;
     </p>
 
   </div>
@@ -336,10 +346,12 @@
   <div class="container mt-4">
     <ul class="nav nav-tabs" id="codeTabsGrid" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="htmlGrid-tab" data-bs-toggle="tab" data-bs-target="#htmlGrid" type="button" role="tab">HTML</button>
+        <button class="nav-link active" id="htmlGrid-tab" data-bs-toggle="tab" data-bs-target="#htmlGrid" type="button"
+          role="tab">HTML</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="cssGrid-tab" data-bs-toggle="tab" data-bs-target="#cssGrid" type="button" role="tab">CSS</button>
+        <button class="nav-link" id="cssGrid-tab" data-bs-toggle="tab" data-bs-target="#cssGrid" type="button"
+          role="tab">CSS</button>
       </li>
     </ul>
 
@@ -399,14 +411,14 @@
       - Si el contenedor es mas ancho, se agregan mas columnas de 150px <br>
       - Si sobra espacio, quedan "columnas vacias" al final de la fila. <br>
       - Si se hace mas pequeño se va adaptando a la pantalla y la columna da un salto de linea,
-      se puede traducir "auto-fill" = "crea tantas columnas como quepan en el contenedor". Entonces 
+      se puede traducir "auto-fill" = "crea tantas columnas como quepan en el contenedor". Entonces
       si traducimos esto: repeat(auto-fill, minmax(150px, 1fr)) seria:
 
-      <ol>
-        <li>Crea tantas columnas de al menos 150px como quepan en el contenedor.</li>
-        <li>Cada columna puede estirarse hasta llenar el espacio restante (1fr) fr = (fracción restante).</li>
-        <li>Si sobra espacio, con auto-fill podrían aparecer columnas vacías.</li>
-      </ol>
+    <ol>
+      <li>Crea tantas columnas de al menos 150px como quepan en el contenedor.</li>
+      <li>Cada columna puede estirarse hasta llenar el espacio restante (1fr) fr = (fracción restante).</li>
+      <li>Si sobra espacio, con auto-fill podrían aparecer columnas vacías.</li>
+    </ol>
     </p>
 
     <h5>auto-fit</h5>
@@ -452,8 +464,10 @@
       <button class="btn btn-warning me-2" onclick="setGridProperty('justify-content','start')">start</button>
       <button class="btn btn-warning me-2" onclick="setGridProperty('justify-content','center')">center</button>
       <button class="btn btn-warning me-2" onclick="setGridProperty('justify-content','end')">end</button>
-      <button class="btn btn-warning me-2" onclick="setGridProperty('justify-content','space-between')">space-between</button>
-      <button class="btn btn-warning me-2" onclick="setGridProperty('justify-content','space-around')">space-around</button>
+      <button class="btn btn-warning me-2"
+        onclick="setGridProperty('justify-content','space-between')">space-between</button>
+      <button class="btn btn-warning me-2"
+        onclick="setGridProperty('justify-content','space-around')">space-around</button>
       <button class="btn btn-warning" onclick="setGridProperty('justify-content','space-evenly')">space-evenly</button>
     </div>
 
@@ -463,7 +477,8 @@
       <button class="btn btn-info me-2" onclick="setGridProperty('align-content','start')">start</button>
       <button class="btn btn-info me-2" onclick="setGridProperty('align-content','center')">center</button>
       <button class="btn btn-info me-2" onclick="setGridProperty('align-content','end')">end</button>
-      <button class="btn btn-info me-2" onclick="setGridProperty('align-content','space-between')">space-between</button>
+      <button class="btn btn-info me-2"
+        onclick="setGridProperty('align-content','space-between')">space-between</button>
       <button class="btn btn-info me-2" onclick="setGridProperty('align-content','space-around')">space-around</button>
       <button class="btn btn-info" onclick="setGridProperty('align-content','space-evenly')">space-evenly</button>
     </div>
@@ -511,8 +526,88 @@
 
     </form>
 
+    <div class="container mt-4">
+      <h1 class="mt-4">CELDAS IRREGULARES EN GRID</h1>
+      <p class="mt-4">
+        Las siguientes propiedades se aplican a los ítems hijos de una cuadrícula, para alterar o cambiar el
+        comportamiento específico de dicho elemento, que no se comportará como el resto.
+      </p>
+      <ol>
+        <li>grid-column-start: Indica en que columna empezará el ítem de la cuadrícula.</li>
+        <li>grid-column-end:	Indica en que columna terminará el ítem de la cuadrícula.</li>
+        <li>grid-row-start:	Indica en que fila empezará el ítem de la cuadrícula.</li>
+        <li>grid-row-end:	Indica en que fila terminará el ítem de la cuadrícula.</li>
+      </ol>
+      <p class="mt-4">
+        - Puedes simplificar haciendo:  grid-column:  4 / 5; (start / end) <br>
+        - Puedes simplificar haciendo:  grid-row:  4 / 5; (start / end)
+      </p>
+
+    </div>
+    
+    <!--|1| col1 |2| col2 |3| col3 |4| col4 |5|-->
+    <div class="container pb-5">
+      <div class="grid-irregular">
+        <div class="item-irregular item-1">Item 1</div>
+        <div class="item-irregular"></div>
+        <div class="item-irregular"></div>
+        <div class="item-irregular"></div>
+      
+        <div class="item-irregular"></div>
+        <div class="item-irregular"></div>
+        <div class="item-irregular"></div>
+        <div class="item-irregular"></div>
+      
+        <div class="item-irregular"></div>
+        <div class="item-irregular"></div>
+        <div class="item-irregular"></div>
+        <div class="item-irregular"></div>
+      
+        <div class="item-irregular item-13">Item 13</div>
+        <div class="item-irregular"></div>
+        <div class="item-irregular"></div>
+        <div class="item-irregular"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pb-5">
+    <form class="form-especial" action="">
+      <input type="text" id="nombre" placeholder="Nombre">
+      <input type="text" id="ape1" placeholder="Apellido 1">
+      <input type="text" id="ape2" placeholder="Apellido 2">
+      <input type="email" id="email" placeholder="tu@email.com">
+      <input type="tel" id="telefono" placeholder="+34 600 000 000">
+    </form>
+  </div>
 
 
+  <div class="container pb-5">
+    <form class="form-formulario" action="">
+
+      <input type="text" id="nombreFormulario" placeholder="Nombre">
+      <input type="text" id="ape1Formulario" placeholder="Apellido 1">
+
+      <div class="form-check vigentes">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckVigentes">
+        <label class="form-check-label" for="flexCheckVigentes">
+          Vigentes
+        </label>
+      </div>
+      <div class="form-check caducadas">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckCaducadas">
+        <label class="form-check-label" for="flexCheckCaducadas">
+          Caducadas
+        </label>
+      </div>
+
+      <button class="btn btn-primary" id="btnAceptar" type="submit"><i class="bi bi-1-circle"></i></button>
+      <button class="btn btn-primary" id="btnCancelar" type="submit"><i class="bi bi-2-circle"></i></button>
+
+      <input type="email" id="emailFormulario" placeholder="tu@email.com">
+      <input type="tel" id="telefonoFormulario" placeholder="+34 600 000 000">
+
+    </form>
   </div>
 
 
