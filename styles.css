@@ -286,6 +286,9 @@ body {
 #nombreFormulario {
   grid-column: 1 / 2;
   grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #ape1Formulario {
@@ -298,6 +301,7 @@ body {
   grid-row: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5px;
 }
 
@@ -306,6 +310,7 @@ body {
   grid-row: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5px;
 }
 
@@ -328,4 +333,16 @@ body {
 #telefonoFormulario {
   grid-column:  4 / 6;
   grid-row: 2;
+}
+
+.clase-input {
+  width: 100%;             /* ocupan todo el ancho de su contenedor */
+  height: 30px;            /* altura uniforme para todos */
+  padding: 0 10px;         /* espacio interno */
+  box-sizing: border-box;  /* incluye padding y borde en el tamaño total */
+  font-size: 12px;         /* tamaño de texto consistente */
+  border: solid 0.5px rgb(145, 145, 145);  /* borde uniforme */
+  background: rgb(230, 230, 230);
+  border-radius: 4px;      /* bordes ligeramente redondeados */
+  outline: none;           /* elimina el borde de enfoque por defecto */
 }
